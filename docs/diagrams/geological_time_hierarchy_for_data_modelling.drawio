@@ -1,0 +1,82 @@
+<mxfile host="Electron" modified="2024-07-02T05:56:53.790Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="ZQaDeDcQANuZGJWOXL51" version="24.2.5" type="device">
+  <diagram name="Página-1" id="vrO897uM2YTcutCzQzcY">
+    <mxGraphModel dx="1834" dy="1686" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-24" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.996;exitY=0.935;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="0BnK5tiUqIBFLf6vjAou-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="116" y="2" as="sourcePoint" />
+            <mxPoint x="148" y="101" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-2" value="Geological Time Hierarchy for Data Modelling" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="6" y="-401" width="337" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-21" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-244" y="-280" width="785.5" height="266" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-8" value="" style="group" vertex="1" connectable="0" parent="0BnK5tiUqIBFLf6vjAou-21">
+          <mxGeometry y="56" width="390.5" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-5" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Cenozoic&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-8">
+          <mxGeometry width="130.16666666666666" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-6" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Mesozoic&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-8">
+          <mxGeometry x="130.16666666666666" width="130.16666666666666" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-7" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Palezoic&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-8">
+          <mxGeometry x="260.3333333333333" width="130.16666666666666" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-10" value="" style="group" vertex="1" connectable="0" parent="0BnK5tiUqIBFLf6vjAou-21">
+          <mxGeometry x="395" y="56" width="390.5" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-11" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Proterozoic&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-10">
+          <mxGeometry width="130.16666666666666" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-12" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Archean&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-10">
+          <mxGeometry x="130.16666666666666" width="130.16666666666666" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-13" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Hadean&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-10">
+          <mxGeometry x="260.3333333333333" width="130.16666666666666" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-15" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;...&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-21">
+          <mxGeometry x="291" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-16" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;...&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-21">
+          <mxGeometry x="167.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-17" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;...&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-21">
+          <mxGeometry x="45" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-18" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;...&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-21">
+          <mxGeometry x="683.25" y="4" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-19" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;...&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-21">
+          <mxGeometry x="559.75" y="4" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-20" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;...&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-21">
+          <mxGeometry x="437.25" y="4" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-23" value="" style="group" vertex="1" connectable="0" parent="0BnK5tiUqIBFLf6vjAou-21">
+          <mxGeometry x="1.5" y="158" width="784" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-3" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Phanerozoic&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-23">
+          <mxGeometry width="392" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-4" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Pre-cambrian&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-23">
+          <mxGeometry x="392" width="392" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-25" value="Eon" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="77" y="141" width="178" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-26" value="num_of_eras = int()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-25">
+          <mxGeometry y="30" width="178" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0BnK5tiUqIBFLf6vjAou-27" value="start, end = tuple()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="0BnK5tiUqIBFLf6vjAou-25">
+          <mxGeometry y="60" width="178" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

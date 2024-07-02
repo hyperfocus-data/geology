@@ -1,0 +1,75 @@
+project_name/
+│
+├── data/
+│   ├── raw/               # Dados brutos, não processados
+│   ├── processed/         # Dados processados e limpos
+│   ├── external/          # Dados de fontes externas
+│   ├── interim/           # Dados intermediários
+│   └── README.md          # Descrição dos dados
+│
+├── notebooks/             # Notebooks Jupyter
+│   ├── exploratory/       # Notebooks para exploração de dados
+│   ├── analysis/          # Notebooks para análise de dados
+│   └── reports/           # Notebooks para relatórios finais
+│
+├── src/                   # Código fonte
+│   ├── data/              # Scripts para carregar, processar e salvar dados
+│   ├── features/          # Scripts para criar e processar features
+│   ├── models/            # Scripts para treinar, validar e testar modelos
+│   ├── visualization/     # Scripts para criar visualizações
+│   └── utils/             # Funções utilitárias e auxiliares
+│
+├── models/                # Modelos treinados e serializados
+│   └── model.joblib       # Exemplo de modelo salvo
+│
+├── reports/               # Relatórios gerados
+│   ├── figures/           # Figuras e gráficos
+│   └── report.pdf         # Relatório final
+│
+├── tests/                 # Testes unitários e de integração
+│   ├── test_data.py       # Testes para scripts de dados
+│   ├── test_features.py   # Testes para scripts de features
+│   ├── test_models.py     # Testes para scripts de modelos
+│   └── test_utils.py      # Testes para funções utilitárias
+│
+├── environment.yml        # Configuração do ambiente Conda
+├── requirements.txt       # Dependências do projeto
+├── setup.py               # Script de configuração
+├── README.md              # Documentação do projeto
+└── .gitignore             # Arquivos e diretórios a serem ignorados pelo Git
+
+------------------------
+project_name/
+│
+├── data/
+│   ├── raw/               # Dados brutos, não processados
+│   ├── processed/         # Dados processados e limpos
+│   ├── external/          # Dados de fontes externas
+│   ├── interim/           # Dados intermediários
+│   └── README.md          # Descrição dos dados
+│
+├── src/                   # Código fonte
+│   ├── data/              # Scripts para carregar, processar e salvar dados
+│   ├── features/          # Scripts para criar e processar features
+│   ├── models/            # Scripts para treinar, validar e testar modelos
+│   ├── visualization/     # Scripts para criar visualizações
+│   └── utils/             # Funções utilitárias e auxiliares
+│
+├── models/                # Modelos treinados e serializados
+│   └── model.joblib       # Exemplo de modelo salvo
+│
+├── reports/               # Relatórios gerados
+│   ├── figures/           # Figuras e gráficos
+│   └── report.pdf         # Relatório final
+│
+├── tests/                 # Testes unitários e de integração
+│   ├── test_data.py       # Testes para scripts de dados
+│   ├── test_features.py   # Testes para scripts de features
+│   ├── test_models.py     # Testes para scripts de modelos
+│   └── test_utils.py      # Testes para funções utilitárias
+│
+├── environment.yml        # Configuração do ambiente Conda
+├── requirements.txt       # Dependências do projeto
+├── setup.py               # Script de configuração
+├── README.md              # Documentação do projeto
+└── .gitignore             # Arquivos e diretórios a serem ignorados pelo Git
