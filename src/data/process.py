@@ -6,7 +6,6 @@ By: Caio Madeira
 import numpy as np
 import pandas as pd
 import re
-from model.models import Eon, DataFrame
 
 pd.options.mode.chained_assignment = None # hide warnings
 
@@ -320,11 +319,3 @@ def get_era_age(df: pd.DataFrame, eon: str, root_type=None, show_info=False) -> 
 #name = eon.set_name("Phanerozoic")
 #duration = eon.set_duration(233.0)
 #print(eon.get_name())
-
-
-df1 = get_eon_df(eon='PHANEROZOIC', df=df)
-
-
-eon = Eon(df1)
-eon.set_name = df1['Geological Time'][1]
-print(eon.name)
