@@ -1,5 +1,5 @@
 import pandas
-import warnings
+import numpy as np
 
 class DataUtils(object):
     def __init__(self, dataframe: pandas.DataFrame):
@@ -37,6 +37,45 @@ class DataUtils(object):
     @property
     def columns(self) -> list:
         return self._columns.to_list()
+    
+    def check_null_columns(self) -> list:
+        null: list = []
+        for column in self._dataframe.columns:
+            if self._dataframe[column].isnull().all():
+                null.append(column)
+        return null
+    
+    def fill_null_values(self, fill_with: any):
+        for column in self._dataframe.columns:
+            if self._dataframe[column].isnull().any():
+                if str(column) == 'Age (Ma)':
+                    self._dataframe[column].fillna(0, inplace=True)
+                self._dataframe[column].fillna(fill_with, inplace=True)
+    
+    def remove_columns_except(self, keep: str):
+        for column in self._dataframe.columns:
+            if column != keep:
+                self._dataframe = self._dataframe.drop(column, axis=1)
+    
+    def rename_one_column(self, old_name: str, new_name: str):
+        if old_name or new_name:
+            self._dataframe = self._dataframe.rename(columns={old_name : new_name})
+        else:
+            raise ValueError("You need to set a new name for column and expecify the old name.")
+    
+    def remove_row(self, index: int):
+        self._dataframe = self._dataframe.drop(index, axis=0)
+        
+    # Data validation
+    # In case of NaN values irregular distribution
+    def validate_data(self, **kwargs):
+        for _, v in kwargs.items():
+            if 'median' in v:
+                    self._dataframe = self._dataframe.fillna(self._dataframe.mean())
+            elif 'linear' in v:
+                self._dataframe = self._dataframe.interpolate(method='linear')
+            else:
+                raise ValueError("You need to choose a valid method.")
 
 # Data model for Eon
 class Eon(DataUtils):
@@ -79,25 +118,35 @@ class Eon(DataUtils):
     @property
     def age(self) -> float:
         if not self._age:
-            self._age = self._dataframe['Age (Ma)'][self._m_range[1]]
-            warnings.warn("The age is a str because no value has specified.")
+            raise ValueError("Age not set.")
         return self._age
     
-    def set_age(self, root_type: str) -> None: 
-        num = self._dataframe['Age (Ma)'][self._m_range[1]]
-        if type(num) == str:
-            num = num.split()
+    # Setter for the age
+    def set_age(self, root_type: str):
+        for column in self._dataframe.columns:
+            if 'Age' in column:
+                num = self._dataframe.at[self._dataframe.index[-1], column] # -1 pega a ultima linha
+                if type(num) == str:
+                    num = num.split()
 
-        if '±' in str(num):
-            if root_type == '+':
-                num = float(num[0]) + float(num[2])
-            elif root_type == '-':
-                num = float(num[0]) - float(num[2])
-            else:
-                num = float(num[0])
-        elif '~' in str(num):
-            num = self._dataframe['Age (Ma)'][self._m_range[1]].split('~')[1]
-        else:
-            pass
-        self._age = num
-        
+                if '±' in str(num):
+                    if root_type == '+':
+                        num = float(num[0]) + float(num[2])
+                    elif root_type == '-':
+                        num = float(num[0]) - float(num[2])
+                    else:
+                        num = float(num[0])
+                elif '~' in str(num):
+                    num = self._dataframe[column][self._m_range[1]].split('~')[1]
+                else:
+                    pass     
+        self._age = float(num)
+    
+    @staticmethod
+    def clean_age(age):
+        if isinstance(age, str):
+            age = age.replace('~', '').replace('±', '').split()[0]
+        try:
+            return float(age)
+        except ValueError:
+            return np.nan
